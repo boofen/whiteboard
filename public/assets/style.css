@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+#canvas {
+    display: block;
+}
+
+#main {
+    width: 100% !important;
+    height: 100% !important;
+    margin:auto;
+}
+
+/* Save text button. */
+#saveText {
+    color: #fff;
+    background-color: #313131;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+}
+
+/* Back button. */
+.backButton {
+    height: 40px !important;
+    width: 40px !important;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* Color buttons. */
+.colors {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.color {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.color.black {
+    background-color: #313131;
+
+}
+
+.color.red {
+    background-color: #eb3131;
+}
+
+.color.green {
+    background-color: #46b13b;
+}
+
+.color.blue {
+    background-color: #308db8;
+}
+
+.color.yellow {
+    background-color: #f6da1e;
+    margin: 0 !important;
+}
+
+/* Tool buttons. */
+.tool {
+    position: fixed;
+    left: 20px;
+    display: block;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 100px;
+}
+
+.trash {
+    top: 100px;
+}
+
+.eraser {
+    top: 150px;
+}
+
+.small {
+    top: 200px;
+}
+
+.medium {
+    top: 250px;
+}
+
+.large {
+    top: 300px;
+}
+
+.texter {
+    top: 350px;
+}
+
+/* Selected element. */
+.selected-element {
+    box-shadow: 0px 0px 10px 4px #52e2ef;
+    -webkit-box-shadow: 0px 0px 10px 4px #52e2ef;
+    -moz-box-shadow: 0px 0px 10px 4px #52e2ef;
+}
+
+.text-cursor {
+    cursor: text;
+}

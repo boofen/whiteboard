@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drawer</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="assets/style.css"/>
+        <link rel="stylesheet" href="assets/bootstrap3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="assets/text.js"></script>
+        <script src="assets/script.js"></script>
+    </head>
+
+    <body>
+        <a href="index.html"><input class="backButton" type="image" src="assets/Back.png"/></a>
+
+        <div class="colors">
+            <div class="color black clr"></div>
+            <div class="color red clr"></div>
+            <div class="color green clr"></div>
+            <div class="color blue clr"></div>
+            <div class="color yellow clr"></div>
+        </div>
+
+        <input class="tool trash drawer" type="image" src="assets/Trash.png" onclick="clearDrawings();"/>
+        <input class="tool eraser clr drawer" type="image" src="assets/Eraser.png"/>
+        <input class="tool small stroker drawer" type="image" src="assets/Small.png"/>
+        <input class="tool medium stroker drawer" type="image" src="assets/Medium.png"/>
+        <input class="tool large stroker drawer" type="image" src="assets/Big.png"/>
+        <input class="tool texter" type="image" src="assets/Text.png"/>
+
+        <div id="main">
+            <canvas id="drawing"></canvas>
+        </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap3.js"></script>
+</html>
